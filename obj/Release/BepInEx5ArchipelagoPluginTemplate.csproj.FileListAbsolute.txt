@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\BepInEx5ArchipelagoPluginTemplate.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\0Harmony.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\Archipelago.MultiClient.Net.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\Assembly-CSharp.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\BepInEx.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\Newtonsoft.Json.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\UnityEngine.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\UnityEngine.UI.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\Release\OutputPath\websocket-sharp.dll
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.AssemblyInfo.cs
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.csproj.CopyComplete
+C:\Users\User\source\repos\BepInEx5ArchipelagoPluginTemplate-master\obj\Release\BepInEx5ArchipelagoPluginTemplate.dll
