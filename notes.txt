@@ -1,4 +1,6 @@
-A collection of notes I've taken while developing what I've managed to develop. Mostly classes and methods to look into to achieve certain things. The goal here was mainly to send and receive checks from the server, but also to speed up some slower parts of the game like skipping the tutorial or speeding up/skipping cutscenes and manage the progression system in game. Much of this is likely outdated but it might give you an idea of what to look for and where.
+A collection of notes I've taken while developing what I've managed to develop. Mostly classes and methods to look into to achieve certain things.
+The goal here was mainly to send and receive checks from the server, but also to speed up some slower parts of the game like skipping the tutorial or speeding up/skipping cutscenes and manage the progression system in game.
+Much of this is likely outdated but it might give you an idea of what to look for and where.
 
  Cutscene stuff:
   CinemaDirector.Cutscene.UpdateCutscene - set duration to 0 to skip most cutscenes
