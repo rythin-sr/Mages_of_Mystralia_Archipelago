@@ -1,0 +1,44 @@
+A collection of notes I've taken while developing what I've managed to develop. Mostly classes and methods to look into to achieve certain things. The goal here was mainly to send and receive checks from the server, but also to speed up some slower parts of the game like skipping the tutorial or speeding up/skipping cutscenes and manage the progression system in game. Much of this is likely outdated but it might give you an idea of what to look for and where.
+
+ Cutscene stuff:
+  CinemaDirector.Cutscene.UpdateCutscene - set duration to 0 to skip most cutscenes
+  PlayerConversation.Update - run this.FastForward() to auto advance dialogues
+  GameMode can be used to detect when to speed up the game
+  Game.OnMainEvent - appears to always run and track game mode changes, likely can be used to do all of the cutscene speedups
+  change Time.timeScale to speed up/slow down the game
+  
+  Currently MiniCutscenes aren't sped up properly, probably use delta time to set duration?
+
+ Item rando stuff:
+  T_UnlockRune.Trigger - runs when a chest with a rune inside is opened
+  Inventory.Unlock - unlocks stuff, enough to track all unique items, repeating items like currency or quest items will need something else
+  InventoryHealthMana has stuff to do with hp/mana upgrades as well as boss elixirs (souls)
+
+  Ideally I'd find a unique name or ID of each chest and can read that instead but I haven't been able to find anything so far 
+
+ Foci:
+  SpellUtils.canCast - gets set to false on game start, needs to be set to true to allow casting with tutorial skip
+  FocusType.Melee is unlocked from the start, will need to be re-locked for the focus rando
+
+ New Game:
+  UIMainMenu.LaunchSaveSlot - the GameLoader.NewGame method here actually starts a new game, replace the level with Level.Repere for haven
+  GlobalProgression needs to be set to PreForet before entering(?) Haven, Inventory.ChangeProgression can be used to do this. Need to force a save right after changing progression aswell.
+  skip conversation 's0_0_0_2_intro_d01' ? - T_StartConversation seems to be a good place to do it but i can't figure out how
+  could also try finding the level first visit cutscene and disable that?
+
+ Spellcraft Tuts:
+  SpellcraftTutorial struct has a state enum, setting it to END somewhere will probably be fine?
+
+ GUI things:
+  Unity's built in ImGUI seems to work for the most part, there's some annoying stuff with it not handling empty strings very well and dnspy seems to make all string declarations empty because fuck you? Maybe works better as a bepin plugin. 
+
+ TODO: 
+  - add textboxes on starting new game to log into AP
+  - save AP connection info in savefile?
+  - autocomplete spellcrafting tutorials in case of softlocks
+  - fix starting in haven breaking all progression points
+  - fix MiniCutscene not getting sped up properly
+  - note down all items and locations/requirements
+  - track repeating item locations (money, quest items, mana bulbs)
+  - look into shuffling puzzles
+  - start the player with all spells, making tutorial 4 bonus checks 
